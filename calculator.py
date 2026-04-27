@@ -1,4 +1,6 @@
 #Calculator:
+"""
+#MATRIX OPERATION:
 print("\n --MENU to choose the operation to be performend--")
 print("1) ADDITION")
 print("2) SUBTRACTION")
@@ -20,4 +22,39 @@ elif choice=="4":
     print("MULTIPLICATION is :",a*b)
     
 else:
-    print("INVALID OPTION")    
+    print("INVALID OPTION")   
+
+# factorial calculator:
+num = int(input("Enter a number: "))
+
+factorial = 1
+
+if num < 0:
+    print("Factorial is not defined for negative numbers")
+elif num == 0:
+    print("Factorial of 0 is 1")
+else:
+    for i in range(1, num + 1):
+        factorial *= i
+    print("Factorial of", num, "is", factorial)   
+#POWER CALCULATOR:
+num = int(input("Enter a number: "))
+num1 = int(input("Enter a power: "))
+result=num**num1
+print("result is :",result)
+#temperature converter (Celsius to Fahrenheit and vice versa):
+f=int(input("enter the temperature to convert fahrenheit into celsius:"))	
+result= (f-32)*5/9
+c=int(input("enter the temperature to convert celsius into fahrenheit :"))
+result1=(c*9/5)+32
+print("convert fahrenheit into celsius:",result)
+print("convert celsius into fahrenheit:",result1)
+#Number system converter (binary to decimal, octal to hexadecimal etc and vice versa):"""
+
+
+
+
+    
+    
+    
+    
