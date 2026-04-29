@@ -49,7 +49,30 @@ c=int(input("enter the temperature to convert celsius into fahrenheit :"))
 result1=(c*9/5)+32
 print("convert fahrenheit into celsius:",result)
 print("convert celsius into fahrenheit:",result1)
-#Number system converter (binary to decimal, octal to hexadecimal etc and vice versa):"""
+#Number system converter (binary to decimal, octal to hexadecimal etc and vice versa):
+num=int(input("Enter a decimal number: "))
+print("decimal to bin:",bin(num))
+print("decimal to oct:",oct(num))
+print("decimal to hex:",hex(num))
+#QUADRATIC EQUATION SOLVER:
+import cmath
+
+def solve_quadratic(a, b, c):
+    d = cmath.sqrt(b**2 - 4*a*c)
+    x1 = (-b + d) / (2*a)
+    x2 = (-b - d) / (2*a)
+    return x1, x2
+#LINEAR EQUATION SOLVER:    
+def solve_linear(a, b):
+    return -b / a
+#PERCENTAGE SOLVER:    
+def percentage(part, whole):
+    return (part / whole) * 100    
+    
+
+"""
+
+
 
 
 
