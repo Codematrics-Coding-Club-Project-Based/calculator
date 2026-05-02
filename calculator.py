@@ -1,5 +1,5 @@
 #Calculator:
-"""
+
 #MATRIX OPERATION:
 print("\n --MENU to choose the operation to be performend--")
 print("1) ADDITION")
@@ -68,9 +68,92 @@ def solve_linear(a, b):
 #PERCENTAGE SOLVER:    
 def percentage(part, whole):
     return (part / whole) * 100    
-    
+# Trigonometry:
+import math
 
-"""
+def trig(x):
+    return math.sin(x), math.cos(x), math.tan(x)
+
+def inverse_trig(x):
+    return math.asin(x), math.acos(x), math.atan(x)
+
+def deg_to_rad(d):
+    return d * math.pi / 180
+
+def rad_to_deg(r):
+    return r * 180 / math.pi
+
+
+# Conversions:
+
+def m_to_ft(m):
+    return m * 3.28084
+
+def ft_to_m(ft):
+    return ft / 3.28084
+
+def kg_to_lb(kg):
+    return kg * 2.20462
+
+def lb_to_kg(lb):
+    return lb / 2.20462
+
+def sec_to_min(sec):
+    return sec / 60
+
+def mps_to_kmph(mps):
+    return mps * 3.6
+
+def pa_to_atm(pa):
+    return pa / 101325
+
+def w_to_hp(w):
+    return w / 745.7
+
+
+# Shapes AREA AND PERIMETERS :
+
+
+def area_circle(r):
+    return math.pi * r * r
+
+def perimeter_circle(r):
+    return 2 * math.pi * r
+
+def area_rectangle(l, w):
+    return l * w
+
+def perimeter_rectangle(l, w):
+    return 2 * (l + w)
+
+def area_triangle(b, h):
+    return 0.5 * b * h
+# Volume Calculator:
+def volume_cube(a):
+    return a ** 3
+
+def volume_sphere(r):
+    return (4/3) * math.pi * r**3
+
+def volume_cylinder(r, h):
+    return math.pi * r**2 * h
+    
+    
+if __name__=="__main__":
+    print("QUADRATIC EQUATION:",solve_quadratic(5,6,4)) 
+    print("LINEAR EQUATION:",solve_linear(5,7)) 
+    print("PERCENTAGE:",percentage(5,100)) 
+    print("Trigonometry:",trig(0)) 
+    print("CONVERSION:",sec_to_min(60))
+    print("AREA & PERIMETERS:",area_circle(5))
+    
+    
+   
+    
+ 
+
+
+
 
 
 
